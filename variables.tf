@@ -76,7 +76,7 @@ variable "vnet_subnet_id" {
 
 variable "api_server_authorized_ip_ranges" {
   type = set(string)
-  description = "(Optional) Comma Separated List of CIDR Ranges that should be allowed to access the kube api server."
+  description = "(Optional) Set of CIDR Ranges that should be allowed to access the kube api server."
   default = null
 }
 
