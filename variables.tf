@@ -74,6 +74,12 @@ variable "vnet_subnet_id" {
   default     = null
 }
 
+variable "api_server_authorized_ip_ranges" {
+  type = string
+  description = "(Optional) Comma Separated List of CIDR Ranges that should be allowed to access the kube api server."
+  default = ""
+}
+
 variable "os_disk_size_gb" {
   description = "Disk size of nodes in GBs."
   type        = number
